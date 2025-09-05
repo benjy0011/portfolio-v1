@@ -6,7 +6,7 @@ import { FileText } from "lucide-react"
 export default function Home () {
 
   return (
-    <section id="home" className="min-h-screen w-full flex justify-center">
+    <section id="home" className="py-30 md:pt-25 md:min-h-full min-w-full flex justify-center">
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-12 md:gap-6 px-4 justify-center">
         <div className="md:flex-1 flex flex-col items-center md:items-start justify-center gap-4 md:gap-10 md:h-full px-4">
           <h1 className="text-5xl md:text-7xl">Hello, I'm Benjy</h1>
@@ -52,7 +52,7 @@ export default function Home () {
           </div>
           
 
-          <div className="mt-8 md:mt-4">
+          <div className="mt-12 md:mt-4">
             <RetroButton variant="darkblue">
               <p className="text-xl">Resume</p>
               <FileText className="size-5" />
