@@ -104,10 +104,14 @@
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
+  /* --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-foreground: var(--secondary-foreground); */
+  --color-primary: var(--retro-lightyellow);
+  --color-primary-foreground: var(--black);
+  --color-secondary: var(--retro-brown);
+  --color-secondary-foreground: var(--retro-lightyellow);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
@@ -132,36 +136,36 @@
 
   /* Custom color */
   /* Greens */
-  --color-retro-green: #34ff32;
-  --color-retro-darkgreen: #00995e;
-  --color-retro-lightgreen: #cfffe2;
+  --color-retro-green: var(--retro-green);
+  --color-retro-darkgreen: var(--retro-darkgreen);
+  --color-retro-lightgreen: var(--retro-lightgreen);
 
   /* Reds / Oranges / Browns */
-  --color-retro-red: #f65855;
-  --color-retro-darkorange: #fd5a46;
-  --color-retro-orange: #e59122;
-  --color-retro-brown: #5d4721;
+  --color-retro-red: var(--retro-red);
+  --color-retro-darkorange: var(--retro-darkorange);
+  --color-retro-orange: var(--retro-orange);
+  --color-retro-brown: var(--retro-brown);
 
   /* Pinks */
-  --color-retro-pink: #fb7da8;
-  --color-retro-lightpink: #ffd8d8;
+  --color-retro-pink: var(--retro-pink);
+  --color-retro-lightpink: var(--retro-lightpink);
 
   /* Blues */
-  --color-retro-blue: #058cd7;
-  --color-retro-darkblue: #39577d;
-  --color-retro-lightblue: #8ccdeb;
+  --color-retro-blue: var(--retro-blue);
+  --color-retro-darkblue: var(--retro-darkblue);
+  --color-retro-lightblue: var(--retro-lightblue);
 
   /* Purples / Violets */
-  --color-retro-violet: #552cb7;
-  --color-retro-lightpurple: #cbb3de;
+  --color-retro-violet: var(--retro-violet);
+  --color-retro-lightpurple: var(--retro-lightpurple);
 
   /* Yellows */
-  --color-retro-yellow: #ffc567;
-  --color-retro-lightyellow: #f5e6cf;
-  --color-retro-paleyellow: #f9f5ea;
+  --color-retro-yellow: var(--retro-yellow);
+  --color-retro-lightyellow: var(--retro-lightyellow);
+  --color-retro-paleyellow: var(--retro-paleyellow);
 
   /* Neutral */
-  --color-black: #1e1e1e;
+  --color-black: var(--black);
 }
 
 .dark {
