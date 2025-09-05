@@ -10,7 +10,7 @@ export default function NavBar() {
         <p className="text-2xl">enjy</p>
       </a>
 
-      <ul className="flex gap-7">
+      <ul className="hidden md:flex gap-7">
         {navLinks.map(({ name, id }) => (
           <li key={id}>
             <a className="text-xl hover:underline" href={`#${id}`}>{name}</a>
