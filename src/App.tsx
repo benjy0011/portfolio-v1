@@ -1,5 +1,6 @@
 import MediaType from "./context/MediaContext/MediaType"
 import About from "./features/About"
+import Experience from "./features/Experiences"
 import Home from "./features/Home"
 import NavBar from "./features/NavBar"
 import gsap from "gsap"
@@ -15,6 +16,7 @@ function App() {
         <NavBar />
         <Home />
         <About />
+        <Experience />
       </main>
     </MediaType>
   )
