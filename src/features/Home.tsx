@@ -33,10 +33,11 @@ export default function Home () {
   })
 
   return (
-    <section id="home" className="py-15 md:pt-15 md:min-h-screen min-w-full flex justify-center">
+    <section id="home" className="py-8 md:py-15 md:pt-15 md:min-h-screen w-full flex justify-center">
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-12 md:gap-6 px-4 md:px-14 justify-center">
-        <div className="md:flex-1 flex flex-col items-center md:items-start justify-center gap-4 md:gap-10 md:h-full px-4">
-          <h1 id="intro-h1" className="text-5xl md:text-7xl">Hello, I'm Benjy</h1>
+        <div className="md:flex-1 flex flex-col items-center md:items-start justify-center gap-12 md:gap-10 md:h-full px-4">
+          <h1 id="intro-h1" className="text-4xl md:text-7xl">Hello, I'm Benjy</h1>
+          {/* desktop */}
           <div className="other-text hidden md:flex text-3xl md:text-5xl items-center gap-3 flex-wrap md:flex-row">
             <p className="w-fit whitespace-nowrap">A junior</p> 
             <span>
@@ -56,10 +57,11 @@ export default function Home () {
             <p>developer</p>
           </div>
 
+          {/* mobile */}
           <div className="other-text md:hidden flex text-3xl md:text-5xl items-center gap-3 flex-col">
             <p className="w-fit whitespace-nowrap">A junior</p>
 
-            <div className="flex gap-3">
+            {/* <div className="flex flex-col gap-3"> */}
               <span>
                 <RotatingText
                   texts={['Full-stack', 'Front-end', 'Back-end']}
@@ -75,11 +77,11 @@ export default function Home () {
                 />  
               </span> 
               <p>developer</p>
-            </div>
+            {/* </div> */}
           </div>
           
 
-          <div className="home-buttons mt-12 md:mt-4">
+          <div className="home-buttons mt-6 md:mt-4">
             <RetroButton variant="darkblue">
               <p className="text-xl">Resume</p>
               <FileText className="size-5" />
