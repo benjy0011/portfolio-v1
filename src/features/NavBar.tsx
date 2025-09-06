@@ -7,7 +7,7 @@ export default function NavBar() {
     <nav className="flex items-center justify-between py-4 px-6 md:fixed static z-50 w-full bg-retro-lightyellow">
       <a className="flex gap-0.5 items-center justify-center" href="#home">
         <img src={BenjyLogo} alt="Logo" className="w-8" />
-        <p className="text-2xl">enjy</p>
+        <p className="text-2xl text-retro-brown">enjy</p>
       </a>
 
       <ul className="hidden md:flex gap-7">

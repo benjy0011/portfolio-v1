@@ -36,14 +36,14 @@ export default function Home () {
     <section id="home" className="py-8 md:py-15 md:pt-15 md:min-h-screen w-full flex justify-center">
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-12 md:gap-6 px-4 md:px-14 justify-center">
         <div className="md:flex-1 flex flex-col items-center md:items-start justify-center gap-12 md:gap-10 md:h-full px-4">
-          <h1 id="intro-h1" className="text-4xl md:text-7xl">Hello, I'm Benjy</h1>
+          <h1 id="intro-h1" className="text-4xl md:text-5xl lg:text-7xl">Hello, I'm Benjy</h1>
           {/* desktop */}
-          <div className="other-text hidden md:flex text-3xl md:text-5xl items-center gap-3 flex-wrap md:flex-row">
+          <div className="other-text hidden md:flex text-3xl md:text-3xl lg:text-4xl xl:text-5xl items-center gap-3 flex-wrap md:flex-row">
             <p className="w-fit whitespace-nowrap">A junior</p> 
             <span>
               <RotatingText
                 texts={['Full-stack', 'Front-end', 'Back-end']}
-                mainClassName="w-fit px-4 sm:px-2 md:px-6 bg-retro-red text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                mainClassName="w-fit px-4 sm:px-2 md:px-6 bg-retro-red text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg selection:bg-white selection:text-retro-red"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
