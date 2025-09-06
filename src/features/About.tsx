@@ -1,18 +1,10 @@
 import Stack from "@/components/Stack";
-import Me from "@/assets/Me.png";
-import Challenge from "@/assets/Tech4Good.png";
-import Hackathon from "@/assets/Hackaten.png";
 import { useMediaType } from "@/context/MediaContext/useMediaType";
 import { ChevronDown } from "lucide-react"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { SplitText } from "gsap/all";
-
-const images = [
-  { id: 2, img: Challenge },
-  { id: 3, img: Hackathon },
-  { id: 1, img: Me },
-]
+import { images } from "@/constants";
 
 export default function About () {
   useGSAP(() => {
