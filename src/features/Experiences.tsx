@@ -89,7 +89,7 @@ export default function Experiences () {
       stagger: 0.06
     }, 0)
 
-  }, [isMobileOrTablet])
+  }, [])
 
   useGSAP(() => {
     if (experiencesRef.current === null) return;

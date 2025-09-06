@@ -34,8 +34,8 @@ export default function Home () {
 
   return (
     <section id="home" className="py-8 md:py-15 md:pt-15 md:min-h-screen w-full flex justify-center">
-      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-12 md:gap-6 px-4 md:px-14 justify-center">
-        <div className="md:flex-1 flex flex-col items-center md:items-start justify-center gap-12 md:gap-10 md:h-full px-4">
+      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-6 md:gap-6 px-4 md:px-14 justify-center">
+        <div className="md:flex-1 flex flex-col items-center md:items-start justify-center gap-7 md:gap-10 md:h-full px-4">
           <h1 id="intro-h1" className="text-4xl md:text-5xl lg:text-7xl">Hello, I'm Benjy</h1>
           {/* desktop */}
           <div className="other-text hidden md:flex text-3xl md:text-3xl lg:text-4xl xl:text-5xl items-center gap-3 flex-wrap md:flex-row">
@@ -80,8 +80,8 @@ export default function Home () {
             {/* </div> */}
           </div>
           
-
-          <div className="home-buttons mt-6 md:mt-4">
+          {/* Button */}
+          <div className="home-buttons mt-5 md:mt-4">
             <RetroButton variant="darkblue">
               <p className="text-xl">Resume</p>
               <FileText className="size-5" />
@@ -89,7 +89,7 @@ export default function Home () {
           </div>
           
         </div>
-        <div className="video md:flex-1 min-w-0 min-h-0 flex items-center justify-center pt-8">
+        <div className="video md:flex-1 min-w-0 min-h-0 flex items-center justify-center pt:7 md:pt-8">
           {/* <img className="w-full max-w-[40vw] h-auto max-h-[50vh] object-contain" src={Programmer} alt="programmer" /> */}
           {/* <video
             src={ProgrammerWorking}
