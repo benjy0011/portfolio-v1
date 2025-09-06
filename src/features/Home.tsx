@@ -1,16 +1,43 @@
 import Programmer from "@/assets/PixelProgrammer.png"
+import ProgrammerWebp from "@/assets/_MConverter.eu_WorkingProgrammer.webp"
 import RetroButton from "@/components/RetroButton"
 import RotatingText from "@/components/RotatingText"
 import { FileText } from "lucide-react"
 
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
+
 export default function Home () {
 
+  useGSAP(() => {
+    const h1Split = new SplitText('#intro-h1', { type: 'chars, words' });
+
+    const tl = gsap.timeline();
+
+    tl.from(h1Split.chars, {
+      yPercent: 100,
+      duration: 1,
+      opacity: 0,
+      ease: 'expo.out',
+      stagger: 0.06
+    })
+
+    tl.from(['.other-text', '.home-buttons', '.video'], {
+      opacity: 0,
+      y: 30,
+      duration: 0.5,
+      ease: 'power1.out',
+      stagger: 0.2
+    }, "-=0.7")
+  })
+
   return (
-    <section id="home" className="py-30 md:pt-25 md:min-h-full min-w-full flex justify-center">
-      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-12 md:gap-6 px-4 justify-center">
+    <section id="home" className="py-15 md:pt-15 md:min-h-screen min-w-full flex justify-center">
+      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-12 md:gap-6 px-4 md:px-14 justify-center">
         <div className="md:flex-1 flex flex-col items-center md:items-start justify-center gap-4 md:gap-10 md:h-full px-4">
-          <h1 className="text-5xl md:text-7xl">Hello, I'm Benjy</h1>
-          <div className="hidden md:flex text-3xl md:text-5xl items-center gap-3 flex-wrap md:flex-row">
+          <h1 id="intro-h1" className="text-5xl md:text-7xl">Hello, I'm Benjy</h1>
+          <div className="other-text hidden md:flex text-3xl md:text-5xl items-center gap-3 flex-wrap md:flex-row">
             <p className="w-fit whitespace-nowrap">A junior</p> 
             <span>
               <RotatingText
@@ -29,7 +56,7 @@ export default function Home () {
             <p>developer</p>
           </div>
 
-          <div className="md:hidden flex text-3xl md:text-5xl items-center gap-3 flex-col">
+          <div className="other-text md:hidden flex text-3xl md:text-5xl items-center gap-3 flex-col">
             <p className="w-fit whitespace-nowrap">A junior</p>
 
             <div className="flex gap-3">
@@ -52,7 +79,7 @@ export default function Home () {
           </div>
           
 
-          <div className="mt-12 md:mt-4">
+          <div className="home-buttons mt-12 md:mt-4">
             <RetroButton variant="darkblue">
               <p className="text-xl">Resume</p>
               <FileText className="size-5" />
@@ -60,8 +87,22 @@ export default function Home () {
           </div>
           
         </div>
-        <div className="md:flex-1 min-w-0 min-h-0 flex items-center justify-center">
-          <img className="w-full max-w-[40vw] h-auto max-h-[50vh] object-contain" src={Programmer} alt="programmer" />
+        <div className="video md:flex-1 min-w-0 min-h-0 flex items-center justify-center pt-8">
+          {/* <img className="w-full max-w-[40vw] h-auto max-h-[50vh] object-contain" src={Programmer} alt="programmer" /> */}
+          {/* <video
+            src={ProgrammerWorking}
+            poster={Programmer}
+            className="w-[69%] h-auto bg-transparent"
+            autoPlay
+            loop
+            // playsInline
+            muted
+          /> */}
+
+          <picture className="w-[69%] h-auto bg-transparent">
+            <source srcSet={ProgrammerWebp} type="image/webp" />
+            <img src={Programmer} alt="programmer coding" />
+          </picture>
         </div>
       </div>
     </section>
