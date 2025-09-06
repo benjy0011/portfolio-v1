@@ -1,5 +1,5 @@
 import Programmer from "@/assets/PixelProgrammer.png"
-import ProgrammerWebp from "@/assets/_MConverter.eu_WorkingProgrammer.webp"
+import ProgrammerWebp from "@/assets/WorkingProgrammer_1.webp"
 import RetroButton from "@/components/RetroButton"
 import RotatingText from "@/components/RotatingText"
 import { FileText } from "lucide-react"
