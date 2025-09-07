@@ -210,15 +210,15 @@ html::selection {
 }
 
 :root {
-  cursor: url('/cursor-default.png'), auto;
+  cursor: url('/cursor-normal.png') 16 16, auto;
 }
 
 a, button, .custom-cursor-pointer {
-  cursor: url("/cursor-pointer.png"), pointer;
+  cursor: url("/cursor-pointer.png") 16 16, pointer;
 }
 
 a:active, button:active, .custom-cursor-active {
-  cursor: url("/cursor-active.png"), pointer;
+  cursor: url("/cursor-active.png") 16 16, pointer;
 }
 
 
