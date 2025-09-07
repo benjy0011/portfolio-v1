@@ -5,6 +5,7 @@ import Home from "./features/Home"
 import NavBar from "./features/NavBar"
 import gsap from "gsap"
 import { ScrollTrigger, SplitText } from "gsap/all"
+import Projects from "./features/Projects"
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -17,6 +18,7 @@ function App() {
         <Home />
         <About />
         <Experience />
+        <Projects />
       </main>
     </MediaType>
   )

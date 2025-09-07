@@ -1,7 +1,14 @@
 import Me from "@/assets/Me.png";
 import Challenge from "@/assets/Tech4Good.png";
 import Hackathon from "@/assets/Hackaten.png";
+
+import ProjectRestore from "@/assets/Project-Restore.png";
+import ProjectGSAPMojito from "@/assets/Project-GSAP-Mojito.png";
+import ProjectDrumMachine from "@/assets/Project-DrumMachine.png";
+import ProjectTheNextHokage from "@/assets/Project-TheNextHokage.png";
+
 import { type ExperienceObj } from "@/features/Experiences";
+import type { ProjectObj } from "@/features/Projects";
 
 export const navLinks = [
   {
@@ -13,8 +20,8 @@ export const navLinks = [
     name: "Experiences",
   },
   {
-    id: "portfolio",
-    name: "Portfolio",
+    id: "projects",
+    name: "Projects",
   },
   {
     id: "contactMe",
@@ -82,3 +89,39 @@ export const ExperiencesInfo: ExperienceObj[] = [
     ]
   },
 ] 
+
+
+
+export const ProjectsInfo: ProjectObj[] = [
+  {
+    projectImg: ProjectRestore,
+    projectTitle: "Online Ski Store",
+    projectDescription: "A full-stack e-commerce web app I built to practice modern development workflows. The frontend is developed with ReactTS and Redux, styled with Material-UI. The backend uses .NET with MS SQL Server, where I integrated Stripe for payment processing and .NET Identity for secure user authentication and account management.",
+    highlightWords: ["ReactTS", "Redux", "Material-UI", ".NET", "MS SQL Server", "Stripe", ".NET Identity"],
+    githubLink: "https://github.com/benjy0011/Restore",
+  },
+  {
+    projectImg: ProjectGSAPMojito,
+    projectTitle: "Mojito Bar Landing Page",
+    projectDescription: "A React and Tailwind CSS landing page project where I explored GSAP animations to create smooth and engaging motion effects. This project helped me strengthen my understanding of UI/UX design and front-end animation techniques.",
+    highlightWords: ["React", "Tailwind CSS", "GSAP"],
+    githubLink: "https://github.com/benjy0011/GSAP-Mojito",
+    projectLink: "https://benjy0011.github.io/GSAP-Mojito/",
+  },
+  {
+    projectImg: ProjectDrumMachine,
+    projectTitle: "Drum Machine",
+    projectDescription: "My first React project — a simple 3×3 drum pad where users can play sounds either by clicking or using keyboard keys. It includes volume control and a theme switcher, offering 18 different sound variations. Through this project, I strengthened my fundamentals in React and state management while building something interactive.",
+    highlightWords: ["React"],
+    githubLink: "https://github.com/benjy0011/drum-machine",
+    projectLink: "https://benjy0011.github.io/drum-machine/",
+  },
+  {
+    projectImg: ProjectTheNextHokage,
+    projectTitle: "The Next Hokage (Hackathon Project – 3rd Place)",
+    projectDescription: "Built with Python in a team of three, this game uses YOLOv8 to detect Naruto hand signs and match them into sequences that let players cast jutsu attacks against opponents. This project gave me hands-on experience in computer vision, model training, and designing game logic — and it won us 3rd place in a university hackathon.",
+    highlightWords: ["Python", "YOLOv8", "3rd place", "hackathon"],
+    githubLink: "https://github.com/yinloonkhor/Hack10-TheNextHokage",
+    wonAward: true,
+  },
+];
