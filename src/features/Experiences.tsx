@@ -117,7 +117,7 @@ export default function Experiences () {
   }, { scope: experiencesRef })
 
   return (
-    <section id="experiences" className="py-20 md:py-25 px-8 md:px-0 md:min-h-screen min-w-full flex justify-center flex-col md:flex-row">
+    <section id="experiences" className="py-20 md:py-25 md:pb-50 px-8 md:px-0 md:min-h-screen min-w-full flex justify-center flex-col md:flex-row">
       <div className="max-w-7xl">
         <h1 id="experience-h1" className="sticky md:static bg-retro-lightyellow/90 md:bg-transparent z-50 top-0 text-2xl md:text-4xl py-4 md:py-0 md:px-0 font-medium md:text-center">Experience</h1>
 
