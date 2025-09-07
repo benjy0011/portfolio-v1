@@ -62,7 +62,7 @@ export default function About () {
           <h1 id="about-me-desktop" className="text-2xl md:text-4xl md:static md:z-0 md:bg-transparent md:w-auto md:px-0 md:py-0 md:block hidden font-medium">About me</h1>
 
           <p className="about-description md:text-xl font-turret-road font-bold md:mt-0 mt-6">
-            Hi, I’m Benjy, a First-Class Honours Mechatronics Engineering graduate with a passion for coding. During university, I won awards in hackathons and challenges despite not coming from an IT background. Now working in software engineering, I continue to sharpen my skills through self-learning and side projects. I’m detail-oriented and committed to creating pixel-perfect designs with great user experiences.
+            Hi, I’m Benjy, a First-Class Honours Mechatronics Engineering graduate with a passion for coding. During university, I won awards in hackathons and challenges despite not coming from an IT background. Now working in software engineering, I continue to sharpen my skills through self-learning and side projects. I’m detail-oriented and committed to creating pixel-perfect websites with great user experiences.
           </p>
         </div>
         <div className="about-img relative md:flex-1 min-w-0 min-h-0 flex items-center justify-center">
@@ -71,7 +71,7 @@ export default function About () {
             <Stack
               cardsData={images}
               // randomRotation={true}
-              cardDimensions={isMobileOrTablet ? { width: 208, height: 258 } : { width: 270.2, height: 335.4 }}
+              cardDimensions={isMobileOrTablet ? { width: 208, height: 258 } : { width: 270.2, height: 330.4 }}
             />
           </div>
         </div>
