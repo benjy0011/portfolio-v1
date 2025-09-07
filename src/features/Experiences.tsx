@@ -41,11 +41,11 @@ const Experience = ({
       {/* Description */}
       <div className="flex-4">
         <h1 className="font-medium text-xl">{position} <span className={companyCSSClassName}>@{company}</span></h1>
-        <div className="flex flex-col gap-2 mt-5">
+        <div className="flex flex-col gap-4 mt-5">
           {experienceDescriptions.map((desc, idx) => (
             <div key={idx} className="flex gap-4 md:gap-6 text-lg">
-              <span><Ghost className="mt-1.5" size={20}/></span>
-              <p>{desc}</p>
+              <span><Ghost className="mt-0.5" size={17}/></span>
+              <p className="font-turret-road font-medium text-[1rem] leading-5.5">{desc}</p>
             </div>
           ))}
 
@@ -117,7 +117,7 @@ export default function Experiences () {
   }, { scope: experiencesRef })
 
   return (
-    <section id="experiences" className="py-20 md:py-25 md:pb-50 px-8 md:px-0 md:min-h-screen min-w-full flex justify-center flex-col md:flex-row">
+    <section id="experiences" className="py-20 md:py-25 md:pb-50 px-8 lg:px-2 xl:px-0 md:min-h-screen min-w-full flex justify-center flex-col md:flex-row">
       <div className="max-w-7xl">
         <h1 id="experience-h1" className="sticky md:static bg-retro-lightyellow/90 md:bg-transparent z-50 top-0 text-2xl md:text-4xl py-4 md:py-0 md:px-0 font-medium md:text-center">Experience</h1>
 
