@@ -106,9 +106,7 @@ export default function Experiences () {
         duration: 2,
         scrollTrigger: {
           trigger: div,
-          start: isMobileOrTablet ? '0% bottom' : '0% bottom',
-          // end: isMobileOrTablet ? '20% bottom' : '50% bottom',
-          // scrub: 1,
+          start: isMobileOrTablet ? 'top 125%' : 'top bottom',
         }
       })
     })
