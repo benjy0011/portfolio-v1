@@ -209,6 +209,20 @@ html::selection {
   color: var(--retro-lightyellow);
 }
 
+:root {
+  cursor: url('/cursor-default.png'), auto;
+}
+
+a, button, .custom-cursor-pointer {
+  cursor: url("/cursor-pointer.png"), pointer;
+}
+
+a:active, button:active, .custom-cursor-active {
+  cursor: url("/cursor-active.png"), pointer;
+}
+
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

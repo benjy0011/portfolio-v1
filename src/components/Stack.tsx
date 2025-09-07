@@ -13,7 +13,10 @@ function CardRotate({ children, onSendToBack, sensitivity }: CardRotateProps) {
   const rotateX = useTransform(y, [-100, 100], [60, -60]);
   const rotateY = useTransform(x, [-100, 100], [-60, 60]);
 
+  const [isDragging, setIsDragging] = useState(false)
+
   function handleDragEnd(_: never, info: { offset: { x: number; y: number } }) {
+    setIsDragging(false);
     if (Math.abs(info.offset.x) > sensitivity || Math.abs(info.offset.y) > sensitivity) {
       onSendToBack();
     } else {
@@ -24,12 +27,16 @@ function CardRotate({ children, onSendToBack, sensitivity }: CardRotateProps) {
 
   return (
     <motion.div
-      className="absolute cursor-grab"
+      className={`absolute ${
+        isDragging
+          ? "custom-cursor-active"
+          : "custom-cursor-pointer"
+      }`}
       style={{ x, y, rotateX, rotateY }}
       drag
       dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
       dragElastic={0.6}
-      whileTap={{ cursor: 'grabbing' }}
+      onDragStart={() => setIsDragging(true)}
       onDragEnd={handleDragEnd}
     >
       {children}
