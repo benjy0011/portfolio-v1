@@ -161,9 +161,10 @@ export default function Projects () {
           yPercent: 100,
           ease: 'expo.out',
           duration: 2,
+          stagger: 0.5,
           scrollTrigger: {
             trigger: project,
-            start: isMobileOrTablet ? '10% bottom' : '25% bottom'
+            start: isMobileOrTablet ? 'top 120%' : '25% bottom'
           }
         })
       })

@@ -33,7 +33,7 @@ export default function Home () {
   })
 
   return (
-    <section id="home" className="py-8 md:py-15 md:pt-15 md:min-h-screen w-full flex justify-center">
+    <section id="home" className="py-8 md:py-15 md:pt-15 min-h-screen w-full flex justify-center">
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-6 md:gap-6 px-4 md:px-14 justify-center">
         <div className="md:flex-1 flex flex-col items-center md:items-start justify-center gap-7 md:gap-10 md:h-full px-4">
           <h1 id="intro-h1" className="text-4xl md:text-5xl lg:text-7xl">Hello, I'm Benjy</h1>
