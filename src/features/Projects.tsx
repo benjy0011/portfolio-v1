@@ -101,7 +101,7 @@ const Project = ({
       
       {/* Project Image */}
       <div className="flex-1 overflow-hidden bg-retro-paleyellow rounded-xl p-4 w-fit h-fit">
-        <img className="w-md h-auto lg:w-full lg:h-full object-contain" src={projectImg} alt="Project-1" />
+        <img className="w-md h-auto lg:w-full lg:h-full object-contain" src={projectImg} alt={projectTitle} />
       </div>
 
       <div className="flex-1 md:flex-3 flex flex-col gap-3">
@@ -164,7 +164,7 @@ export default function Projects () {
           stagger: 0.5,
           scrollTrigger: {
             trigger: project,
-            start: isMobileOrTablet ? 'top 120%' : '25% bottom'
+            start: isMobileOrTablet ? 'top 165%' : 'top bottom',
           }
         })
       })
