@@ -163,7 +163,7 @@ export default function Projects () {
           duration: 2,
           scrollTrigger: {
             trigger: project,
-            start: 'bottom bottom',
+            start: isMobileOrTablet ? '10% bottom' : '25% bottom'
           }
         })
       })
