@@ -10,6 +10,9 @@ import ProjectTheNextHokage from "@/assets/Project-TheNextHokage.png";
 import { type ExperienceObj } from "@/features/Experiences";
 import type { ProjectObj } from "@/features/Projects";
 
+import { Github } from "lucide-react";
+import { Linkedin } from "lucide-react";
+
 export const navLinks = [
   {
     id: "about",
@@ -125,3 +128,16 @@ export const ProjectsInfo: ProjectObj[] = [
     wonAward: true,
   },
 ];
+
+
+
+export const contactMeList = [
+  {
+    icon: Github,
+    link: "https://github.com/benjy0011",
+  },
+  {
+    icon: Linkedin,
+    link: "https://www.linkedin.com/in/benjyyeoh/",
+  }
+]
