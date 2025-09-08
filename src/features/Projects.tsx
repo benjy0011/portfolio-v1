@@ -164,7 +164,7 @@ export default function Projects () {
           stagger: 0.5,
           scrollTrigger: {
             trigger: project,
-            start: isMobileOrTablet ? 'top 165%' : 'top bottom',
+            start: isMobileOrTablet ? 'top 135%' : '20% bottom',
           }
         })
       })
