@@ -13,6 +13,8 @@ import type { ProjectObj } from "@/features/Projects";
 import { Github } from "lucide-react";
 import { Linkedin } from "lucide-react";
 
+export const portfolioLink = "/portfolio-v1/Benjy_ResumeCV.pdf";
+
 export const navLinks = [
   {
     id: "about",
@@ -47,7 +49,7 @@ export const ExperiencesInfo: ExperienceObj[] = [
     experienceDescriptions: [
       "Maintained and enhanced the internal HR website, covering design, development (frontend & backend), database, and requirement discussions with the product owner.",
       "Assisted in debugging and feature implementation for an enterprise-level MES software as part of a multi-country development team.",
-      "Contributed to an IoT R&D web app project, focusing on screen design and frontend development within a team.",
+      "Contributed to an IoT R&D web app project, primarily focusing on screen design and frontend development, while also supporting backend tasks when needed as part of a collaborative team.",
     ],
     skillTags: [
       { text: "React", color: "blue" },
@@ -57,6 +59,7 @@ export const ExperiencesInfo: ExperienceObj[] = [
       { text: "MUI", color: "blue" },
       { text: "Shadcn", color: "red" },
       { text: "TailwindCSS", color: "purple" },
+      { text: "Express.js", color: "green" },
     ]
   },
   {

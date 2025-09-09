@@ -7,6 +7,7 @@ import { FileText } from "lucide-react"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
+import { portfolioLink } from "@/constants"
 
 export default function Home () {
 
@@ -82,7 +83,7 @@ export default function Home () {
           
           {/* Button */}
           <div className="home-buttons mt-5 md:mt-4">
-            <RetroButton variant="darkblue">
+            <RetroButton variant="darkblue" onClick={() => window.open(portfolioLink, "_blank")}>
               <p className="text-xl">Resume</p>
               <FileText className="size-5" />
             </RetroButton>
