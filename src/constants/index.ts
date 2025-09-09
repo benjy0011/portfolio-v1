@@ -13,7 +13,7 @@ import type { ProjectObj } from "@/features/Projects";
 import { Github } from "lucide-react";
 import { Linkedin } from "lucide-react";
 
-export const portfolioLink = "/portfolio-v1/Benjy_ResumeCV.pdf";
+export const portfolioLink = "/portfolio-v1/Benjy_Resume.pdf";
 
 export const navLinks = [
   {
