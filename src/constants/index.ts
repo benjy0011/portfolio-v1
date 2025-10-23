@@ -3,9 +3,10 @@ import Challenge from "@/assets/Tech4Good.png";
 import Hackathon from "@/assets/Hackaten.png";
 
 import ProjectRestore from "@/assets/Project-Restore.png";
-import ProjectGSAPMojito from "@/assets/Project-GSAP-Mojito.png";
+// import ProjectGSAPMojito from "@/assets/Project-GSAP-Mojito.png";
 import ProjectDrumMachine from "@/assets/Project-DrumMachine.png";
 import ProjectTheNextHokage from "@/assets/Project-TheNextHokage.png";
+import ProjectSundazeCoffee from "@/assets/Project-Sundaze-Coffee.png";
 
 import { type ExperienceObj } from "@/features/Experiences";
 import type { ProjectObj } from "@/features/Projects";
@@ -106,13 +107,21 @@ export const ProjectsInfo: ProjectObj[] = [
     highlightWords: ["ReactTS", "Redux", "Material-UI", ".NET", "MS SQL Server", "Stripe", ".NET Identity"],
     githubLink: "https://github.com/benjy0011/Restore",
   },
+  // {
+  //   projectImg: ProjectGSAPMojito,
+  //   projectTitle: "Mojito Bar Landing Page",
+  //   projectDescription: "A React and Tailwind CSS landing page project where I explored GSAP animations to create smooth and engaging motion effects. This project helped me strengthen my understanding of UI/UX design and front-end animation techniques.",
+  //   highlightWords: ["React", "Tailwind CSS", "GSAP"],
+  //   githubLink: "https://github.com/benjy0011/GSAP-Mojito",
+  //   projectLink: "https://benjy0011.github.io/GSAP-Mojito/",
+  // },
   {
-    projectImg: ProjectGSAPMojito,
-    projectTitle: "Mojito Bar Landing Page",
-    projectDescription: "A React and Tailwind CSS landing page project where I explored GSAP animations to create smooth and engaging motion effects. This project helped me strengthen my understanding of UI/UX design and front-end animation techniques.",
-    highlightWords: ["React", "Tailwind CSS", "GSAP"],
-    githubLink: "https://github.com/benjy0011/GSAP-Mojito",
-    projectLink: "https://benjy0011.github.io/GSAP-Mojito/",
+    projectImg: ProjectSundazeCoffee,
+    projectTitle: "Sundaze Coffee Landing Page",
+    projectDescription: "A modern café landing page built with Next.js, Tailwind CSS, and Shadcn/UI, featuring smooth animations and a fully responsive design. This project highlights my ability to create visually appealing and interactive web experiences using clean, maintainable code and modern front-end technologies.",
+    highlightWords: ["Next.js", "Tailwind CSS", "Shadcn/UI", "animations", "responsive"],
+    githubLink: "https://github.com/benjy0011/sundaze-cafe",
+    projectLink: "https://sundaze-coffee.vercel.app/"
   },
   {
     projectImg: ProjectDrumMachine,
