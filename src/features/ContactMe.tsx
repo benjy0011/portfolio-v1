@@ -16,7 +16,7 @@ export default function ContactMe() {
 
     tl1.from(connectH1Split.chars, {
       scale: 0,
-      duration: 1.5,
+      duration: 1,
       ease: 'bounce.out',
       stagger: 0.06
     })
@@ -25,7 +25,7 @@ export default function ContactMe() {
       opacity: 0,
       yPercent: -80,
       ease: 'bounce.out',
-      duration: 1.5,
+      duration: 1,
       stagger: 0.2,
     }, "-=0.5")
   })
