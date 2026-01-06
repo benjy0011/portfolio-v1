@@ -43,6 +43,19 @@ export const images = [
 
 export const ExperiencesInfo: ExperienceObj[] = [
   {
+    timeline: "Dec 2025 - Current",
+    position: "Front-end Engineer",
+    company: "Ant Group",
+    companyCSSClassName: "text-retro-blue",
+    experienceDescriptions: [
+    ],
+    skillTags: [
+      { text: "React", color: "purple" },
+      { text: "Typescript", color: "blue" },
+      { text: "Javascript", color: "yellow" },
+    ]
+  },
+  {
     timeline: "Dec 2024 - Current",
     position: "Junior Software Engineer",
     company: "YNY Technology Sdn Bhd",
